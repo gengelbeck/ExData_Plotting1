@@ -41,7 +41,7 @@ plot(ds$DateTime,ds$Sub_metering_1,
     col="black")
 lines(ds$DateTime,ds$Sub_metering_2,col="red")
 lines(ds$DateTime,ds$Sub_metering_3,col="blue")
-legend("topright", lty = 1, cex=0.7, col=c("black", "red", "blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright", lty = 1, cex=0.6, col=c("black", "red", "blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
 # Plot the Global_reactive_power by day of the week (default)
 plot(ds$DateTime,ds$Global_reactive_power,

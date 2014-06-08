@@ -7,6 +7,9 @@ load("ds.RData")
 # Create a DateTime variable
 ds$DateTime <- strptime(paste(ds$Date, ds$Time), "%d/%m/%Y %H:%M:%S")
 
+# Set the margins
+par(mar=c(4,4,3,1))
+
 # Plot the power usage by day of the week (default)
 plot(ds$DateTime,ds$Sub_metering_1,
     type="l",

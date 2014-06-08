@@ -8,7 +8,7 @@ load("ds.RData")
 ds$DateTime <- strptime(paste(ds$Date, ds$Time), "%d/%m/%Y %H:%M:%S")
 
 # Set the base plots to a 2 by 2 matrix
-par(mfrow=c(2,2), mar=c(4,2,2,2))
+par(mfrow=c(2,2), mar=c(4,4,1,1))
 
 
 # Plot the power usage by day of the week (default)
